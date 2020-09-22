@@ -1,16 +1,12 @@
+
+
 .App {
   text-align: center;
 }
 
 .App-logo {
+  animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -35,4 +31,85 @@
   to {
     transform: rotate(360deg);
   }
+}
+li {
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.05);
+    background-image:
+        linear-gradient(90deg,
+        #FFD32E 10px,
+        #EEE 10px,
+        #EEE 11px,
+        transparent 11px);
+    padding: 10px 15px 10px 25px;
+    border: 1px solid #CCC;
+    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.5);
+    margin-bottom: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#query {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 19px;
+    font-weight: 600;
+    height: inherit;
+    padding: 5px;
+    text-align: center;
+    background: linear-gradient(45deg,crimson,white,red);
+    font-family: calibri light;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+#notebooks {
+    background: linear-gradient(45deg,crimson,pink,pink,red);
+    position: absolute;
+    left: 50%;
+    margin-left: -175px;
+    margin-top: 35px;
+    width: 350px;
+    padding: 15px;
+    border: 2px solid crimson;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    box-shadow: inset 1px 1px 0 white;
+    max-height: inherit;
+}
+
+ul {
+    margin: 0 auto;
+    padding: 0;
+    max-height: inherit;
+    overflow-y: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px 5px 0 5px;
+    border-left: none;
+    border-right: none;
+}
+
+#notebooks span {
+    display: block;
+    position: absolute;
+    background:linear-gradient(45deg,orange,lightyellow,lightyellow,orange);
+    color: orangered;
+    font-weight: 700;
+    bottom: -35px;
+    left: -1px;
+    width: 360px;
+    height: inherit;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: 2px solid orange;
+    padding: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
+}
+strong{
+  color: crimson;
 }
